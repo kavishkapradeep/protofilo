@@ -442,3 +442,15 @@ a:active{
   span{
     color: var(--c-background);
   }
+
+
+  /*----contact setup----*/
+
+  .contact-setup-form{
+    
+    background-color: #1c768f;
+    padding: 30px;
+  }
+  .contactus-setup{
+    height: 500px;
+  }
