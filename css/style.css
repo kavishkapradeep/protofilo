@@ -156,8 +156,10 @@ a:active{
     
     filter: drop-shadow(5px 5px 8px var(--c-background));
     color: var(--c-dark);
+    transform: scale(1.1, 1.1);
         
 }
+
 
 .footer-link:active{
     background-color: var(--c-primary);
@@ -172,36 +174,6 @@ a:active{
     color: aquamarine;
     text-decoration: none;
 }
-
-/*--------Contact us----------*/
-
-.contactus-setup{
-    font-family: var(--font-base);
-    width: 100%;
-    margin-top: 120px;    
-    border: 1px solid ;
-    border-color: var(--c-primary);    
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-.contact-setup{
-    font-size: 32px;
-    margin-bottom: 20px;
-
-}
-.contact-text{
-    font-size: 24px;
-    
-}
-
-.contact-icon{
-    color: var(--c-primary);
-    
-    width: 20px;
-
-    padding-bottom: 33px;
-}
-
 /*navbar setup*/
 .loader {
     margin-left: 20px;
@@ -448,9 +420,85 @@ a:active{
 
   .contact-setup-form{
     
-    background-color: #1c768f;
+    font-size: 20px;
+    font-weight: 400;
     padding: 30px;
+    font-family: var(--font-base);
+    
   }
   .contactus-setup{
     height: 500px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  
   }
+  
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+  25%{
+    background-position: 75% 25%;
+  }
+	50% {
+		background-position: 100% 50%;
+	}
+  75%{
+    background-position: 75% 25%;
+  }
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.contactus-setup{
+  font-family: var(--font-base);
+  width: 100%;
+  margin-top: 120px;    
+  border: 1px solid ;
+  border-color: var(--c-primary);    
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 500px;
+}
+.contact-setup{
+  font-size: 32px;
+  margin-bottom: 20px;
+
+}
+.contact-text{
+  font-size: 24px;
+  
+}
+
+.contact-icon{
+  color: black;
+  
+  width: 20px;
+
+  padding-bottom: 33px;
+  margin-left: 25px;
+}
+
+.contact-setup-blur{
+  
+  z-index: 2;
+  border: 1px solid;
+  width: 860px;
+  height: 300px;
+  padding: 5px;
+  position: absolute;
+  filter: blur(2px);
+  background: transparent;
+  box-shadow: #032539 2px;
+  
+      
+}
+
+.contact-setup-form{
+  padding: 5px;
+  margin-top: 20px;
+}
