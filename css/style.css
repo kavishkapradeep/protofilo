@@ -100,7 +100,7 @@ a:active{
 }
 .hero-img{
     background: transparent;
-    filter: drop-shadow(6px 6px 20px  var(--c-background));
+    filter: drop-shadow(6px 4px 12px  var(--c-background));
     
 }
 
