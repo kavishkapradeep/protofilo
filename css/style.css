@@ -1,3 +1,4 @@
+
 :root{
     --font-base:"Boska",san-serif;
     --c-primary:#FA991C;
@@ -90,6 +91,12 @@ navbar setup*/
  word-spacing: 3px;
  text-align: center;
 }
+
+span{
+  font-size: 38px;
+  color: var(--c-background);
+}
+
 /*------------------about setup-----------*/
 #about-setup{
     position: relative;
@@ -412,10 +419,7 @@ navbar setup*/
     }
   }
   
-  span{
-    color: var(--c-background);
-  }
-
+ 
 
   /*----contact setup----*/
 
@@ -537,6 +541,7 @@ navbar setup*/
   width: 200px;
   margin-bottom: 20px;
   font-size: 32px;
+  font-family: var(--font-base);
 }
 
 .certificate-edit:hover{
@@ -637,6 +642,8 @@ button:hover svg {
   
   display: grid;
   border-radius: 50%;
+  
+
 }
 .gallery > img {
   grid-area: 1/1;
@@ -660,6 +667,7 @@ button:hover svg {
 .gallery > img:nth-child(1) {
   clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
   --_y: calc(-1*var(--g))
+  
 }
 .gallery > img:nth-child(2) {
   clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
@@ -674,10 +682,62 @@ button:hover svg {
   --_x: calc(-1*var(--g))
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
+.gallery {
+  margin-top: 40px;
+  text-align:center;
   display: grid;
   place-content: center;
-  background: #3B8686;
+  background: var(--c-dark);
+  
+  
+}
+
+.about-size{
+  background-color:#032539;
+  
+  z-index: 3;
+  height: 600px;
+}
+
+.about-size:hover{
+  background-image: url(/img/background1.jpg);
+  .about-head{
+    font-size: 45px;
+  }
+  
+
+}
+
+.about-head{
+  font-size: 32px;
+  font-family: var(--font-base);
+  font-weight: 600;
+  color: #f5f5f5;
+  margin-top: 20px;
+  
+  
+}
+
+.about-text{
+  padding: 50px !important;
+  margin-right: 200px !important;
+  margin-top: 100px;
+  color: #f8f3f2;
+  background-color: transparent !important;
+  border-radius: 10px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  box-shadow: 10px 10px 10px rgba(1, 0, 0, 0.2); /* Optional: Add shadow */
+  width:370px !important;
+  height: 250px;
+
+}
+
+.about-button{
+  margin-top: 50px !important;
+  margin-left: 60px !important;
+}
+
+.about-button:hover{
+  background-color: var(--c-primary) !important;
 }
