@@ -694,7 +694,7 @@ button:hover svg {
 
 .about-size{
   background-color:#032539;
-  
+  width: 100.5%;
   z-index: 3;
   height: 600px;
 }
@@ -740,4 +740,9 @@ button:hover svg {
 
 .about-button:hover{
   background-color: var(--c-primary) !important;
+}
+
+/*------------remove scrollbar------------*/
+::-webkit-scrollbar {
+  width: 0px;
 }
